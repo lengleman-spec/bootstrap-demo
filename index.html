@@ -74,14 +74,38 @@
           <div class="col">
             <div class="p-5 bg-primary text-light">col 3</div>
           </div>
+          <div class="col">
+            <div class="p-5 bg-primary text-light">col 4</div>
+          </div>
           <!--'padding:5, background-color:primary,text-color:light'-->
-          <!--Because there's only 3 cols specified, the browser divides the 3 cols evenly out of the base 12 grid system, so each col is 4 'spaces' wide-->
+          <p>
+            Because there's only 4 cols specified, the browser divides the 4
+            cols evenly out of the base 12 grid system, so each col is 3
+            'portions' wide.
+          </p>
         </div>
       </div>
 
       <div class="container-lg my-5">
         <h2>Column Widths</h2>
-        <p></p>
+        <div class="row">
+          <div class="col-6">
+            <div class="p-5 bg-primary text-light">col 1</div>
+          </div>
+          <div class="col-3">
+            <div class="p-5 bg-primary text-light">col 2</div>
+          </div>
+          <div class="col-3">
+            <div class="p-5 bg-primary text-light">col 3</div>
+          </div>
+        </div>
+
+        <p>
+          When using fixed width columns, as long as you make sure they add up
+          to 12 each row, you can make them any size you'd like. In this
+          example, col 1 = 6 portions, col 2 and 3 = 3 portions, totaling 12.
+        </p>
+        <p>Syntax: col-<em>number</em></p>
       </div>
 
       <div class="container-lg my-5">
