@@ -65,12 +65,17 @@
       <div class="container-lg my-5">
         <h2>Basic Grid</h2>
         <div class="row">
-          <div>
+          <div class="col">
             <div class="p-5 bg-primary text-light">col 1</div>
-            <div class="p-5 bg-primary text-light">col 2</div>
-            <div class="p-5 bg-primary text-light">col 3</div>
-            <!--'padding:5, background-color:primary,text-color:light'-->
           </div>
+          <div class="col">
+            <div class="p-5 bg-primary text-light">col 2</div>
+          </div>
+          <div class="col">
+            <div class="p-5 bg-primary text-light">col 3</div>
+          </div>
+          <!--'padding:5, background-color:primary,text-color:light'-->
+          <!--Because there's only 3 cols specified, the browser divides the 3 cols evenly out of the base 12 grid system, so each col is 4 'spaces' wide-->
         </div>
       </div>
 
