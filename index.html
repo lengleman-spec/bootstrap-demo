@@ -11,31 +11,84 @@
     />
   </head>
   <body>
-    <div class="container my-5">
-      <!--Adds margin(5) to the top and bottom of element-->
-      <h2>Normal container class (.container)</h2>
-      <p>
-        This is the most basic container in Bootstrap. It sets the
-        <strong>max-width</strong> at each responsive breakpoint. In other
-        words, it has a fixed width that changes at different breakpoints.
-      </p>
-    </div>
+    <section class="containers">
+      <div class="container my-5">
+        <!--Adds margin(5) to the top and bottom of element-->
+        <h2>Normal container class (.container)</h2>
+        <p>
+          This is the most basic container in Bootstrap. It sets the
+          <strong>max-width</strong> at each responsive breakpoint. In other
+          words, it has a fixed width that changes at different breakpoints.
+        </p>
+      </div>
 
-    <div class="container-fluid">
-      <h2>Fluid Container (.container-fluid)</h2>
-      <p>
-        This container will always be 100% width no matter what - it sets the
-        <strong>width: 100%</strong> at all breakpoints. It will always span the
-        entire length of the viewport. Here's some sample text to demonstrate:
-      </p>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum officiis
-        eos eum explicabo assumenda. Quam laudantium tempora necessitatibus.
-        Corrupti nisi illum tempore aliquam fugit. Reiciendis rem sit aliquid
-        quae harum?
-      </p>
-    </div>
+      <div class="container-fluid">
+        <h2>Fluid Container (.container-fluid)</h2>
+        <p>
+          This container will always be 100% width no matter what - it sets the
+          <strong>width: 100%</strong> at all breakpoints. It will always span
+          the entire length of the viewport. Here's some sample text to
+          demonstrate:
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum
+          officiis eos eum explicabo assumenda. Quam laudantium tempora
+          necessitatibus. Corrupti nisi illum tempore aliquam fugit. Reiciendis
+          rem sit aliquid quae harum?
+        </p>
+      </div>
 
+      <div class="container-lg my-5">
+        <h2>Breakpoint Containers (.container-{breakpoint})</h2>
+        <p>
+          Also known as "Responsive Containers", this class sets a responsive,
+          fixed-width container that activates at the specified breakpoint and
+          wider. <strong>Width: 100%</strong> until the specified breakpoint.
+          Before that breakpoint, it behaves like fluid containers
+          (.container-fluid). It will span the entire length of the viewport.
+          However, once it hits the specified breakpoint, the container jumps
+          back to behaving as a normal container class, where it gets assigned a
+          <strong>max-width</strong> and will not extend past this width.
+        </p>
+        <p>
+          This particular example paragraph demonstrates a container, set with a
+          large screen breakpoint, with a value of 5 for vertical margins (the
+          class is .container-lg). This means that it will have 100% width until
+          lg screens, then it will assume the behavior of .container, assigning
+          a max-width.
+        </p>
+      </div>
+    </section>
+
+    <hr />
+    <section class="grid">
+      <div class="container-lg my-5">
+        <h2>Basic Grid</h2>
+        <div class="row">
+          <div>
+            <div class="p-5 bg-primary text-light">col 1</div>
+            <div class="p-5 bg-primary text-light">col 2</div>
+            <div class="p-5 bg-primary text-light">col 3</div>
+            <!--'padding:5, background-color:primary,text-color:light'-->
+          </div>
+        </div>
+      </div>
+
+      <div class="container-lg my-5">
+        <h2>Column Widths</h2>
+        <p></p>
+      </div>
+
+      <div class="container-lg my-5">
+        <h2>Responsive Column Widths</h2>
+        <p></p>
+      </div>
+
+      <div class="container-lg my-5">
+        <h2>Justiying Columns</h2>
+        <p></p>
+      </div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
