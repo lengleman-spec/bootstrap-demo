@@ -11,7 +11,8 @@
     />
   </head>
   <body>
-    <section class="containers">
+    <section class="containers" id="containers">
+      <h2 class="text-center fw-bold">Containers In Bootstrap</h2>
       <div class="container my-5">
         <!--Adds margin(5) to the top and bottom of element-->
         <h2>Normal container class (.container)</h2>
@@ -61,7 +62,8 @@
     </section>
 
     <hr />
-    <section class="grid">
+    <section class="grid" id="grid">
+      <h2 class="text-center fw-bold">Bootstrap's Grid System</h2>
       <div class="container-lg my-5">
         <h2>Basic Grid</h2>
         <div class="row">
@@ -172,8 +174,48 @@
           the end of the container.
         </p>
       </div>
+
+      <div class="container-lg my-5">
+        <h2>Aligning Items</h2>
+        <div
+          style="height: 200px; border: 2px solid black"
+          class="row align-items-end"
+        >
+          <div class="col-md-3">
+            <div class="p-5 bg-primary text-light">col 1</div>
+          </div>
+          <div class="col-md-3">
+            <div class="p-5 bg-primary text-light">col 2</div>
+          </div>
+          <div class="col-md-3">
+            <div class="p-5 bg-primary text-light">col 3</div>
+          </div>
+        </div>
+
+        <p>
+          The <strong>align-items</strong> utility is used to control the
+          vertical alignment of flex items inside a flex container. Remember,
+          you must have <strong>.d-flex</strong> or
+          <strong>.row</strong> classes to make it a flex container and allow
+          align-items to work properly.
+        </p>
+
+        <p>
+          Code from above example:
+          <code>div class="row align-items-end";</code>
+        </p>
+        <p>
+          Here the div that's the flex row has
+          <strong>align-items-end</strong> declared on it. This makes it so that
+          all flex children (col 1, col 2, and col 3) are aligned vertically at
+          the <em>end</em> of the flex container.
+        </p>
+      </div>
     </section>
 
+    <!-- Navbars -->
+    <hr />
+    <section class="navbar" id="navbar"></section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
