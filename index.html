@@ -12,7 +12,7 @@
   </head>
   <body>
     <!-- Navbars -->
-    <nav class="navbar">
+    <nav class="navbar navbar-expand-md">
       <div class="container-xxl">
         <a href="#containers" class="navbar-brand">
           <span class="fw-bold text-secondary">Bootstrap Cheat Sheet</span>
@@ -35,6 +35,12 @@
           <ul class="navbar-nav">
             <li class="nav-item">
               <a href="#containers" class="nav-link">Containers</a>
+            </li>
+            <li class="nav-item">
+              <a href="#grid" class="nav-link">Grid System</a>
+            </li>
+            <li class="nav-item">
+              <a href="#cards" class="nav-link">Cards</a>
             </li>
           </ul>
         </div>
@@ -241,6 +247,24 @@
           all flex children (col 1, col 2, and col 3) are aligned vertically at
           the <em>end</em> of the flex container.
         </p>
+      </div>
+    </section>
+
+    <!-- cards section -->
+    <section class="bg-light mt-5" id="cards">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2>Cards</h2>
+          <p class="lead text-muted">
+            This is a sample paragraph with the classes
+            <code>lead</code> and <code>text-muted</code>.
+          </p>
+        </div>
+
+        <div class="row my-5 align-items-center justify-content-center">
+          <div class="col-8 col-lg-4 col-xl-3"></div>
+          <!--Initially, for xs screens, it will be 8 cols in width. When we get to lg screens, it will be 4 cols. Xl screens will be 3 cols wide.-->
+        </div>
       </div>
     </section>
 
