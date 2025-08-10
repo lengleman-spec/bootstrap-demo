@@ -13,7 +13,32 @@
   <body>
     <!-- Navbars -->
     <nav class="navbar">
-      <div class="container-lg"></div>
+      <div class="container-xxl">
+        <a href="#containers" class="navbar-brand">
+          <span class="fw-bold text-secondary">Bootstrap Cheat Sheet</span>
+        </a>
+
+        <!-- toggle button for mobile nav (.navbar-toggler) -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end align-center"
+          id="main-nav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#containers" class="nav-link">Containers</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
     <hr />
 
