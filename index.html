@@ -63,7 +63,7 @@
     </nav>
 
     <!-- Containers -->
-    <section class="containers border border-dark" id="containers">
+    <section class="containers border border-dark bg-light" id="containers">
       <h2 class="text-center fw-bold">Containers In Bootstrap</h2>
       <div class="container my-5">
         <!--Adds margin(5) to the top and bottom of element-->
@@ -372,7 +372,6 @@
             Collapse plugin.
           </p>
         </div>
-        <!--here-->
 
         <div class="row my-5 g-5 justify-content-around align-items-center">
           <div class="accordion" id="accordion">
@@ -574,7 +573,7 @@
 
     <!-- Forms -->
 
-    <section class="border border-dark border-2" id="forms">
+    <section class="border border-dark border-2 bg-light" id="forms">
       <div class="container-lg my-4">
         <div class="text-center">
           <h2>Forms and the .form Component</h2>
@@ -600,13 +599,27 @@
                   id="email"
                   placeholder="e.g. mario@hotmail.com"
                 />
+
+                <!-- Tooltip -->
+                <span class="input-group-text">
+                  <span
+                    class="tt"
+                    data-bs-placement="bottom"
+                    title="Enter an email address we can reply to."
+                  >
+                    <i class="bi bi-question-circle text-muted"></i>
+                  </span>
+                </span>
               </div>
 
               <!-- Name -->
               <label for="name" class="form-label">Name:</label>
               <div class="input-group mb-4">
-                <span class="input-group-text"
-                  ><i class="bi bi-person-fill"></i>
+                <span
+                  class="input-group-text tt"
+                  data-bs-placement="bottom"
+                  title="Enter an email"
+                  ><i class="bi bi-question-circle"></i>
                 </span>
                 <input
                   type="text"
@@ -649,5 +662,12 @@
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      const tooltips = document.querySelectorAll(".tt");
+      tooltips.forEach((t) => {
+        new bootstrap.Tooltip(t);
+      });
+    </script>
   </body>
 </html>
