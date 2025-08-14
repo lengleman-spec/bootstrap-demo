@@ -589,7 +589,7 @@
               <label for="email" class="form-label">Email address:</label>
               <div class="mb-4 input-group">
                 <span class="input-group-text">
-                  <i class="bi bi-person-fill"></i>
+                  <i class="bi bi-envelope-fill"></i>
                 </span>
                 <input
                   type="email"
@@ -599,10 +599,11 @@
                 />
               </div>
 
+              <!-- Name -->
               <label for="name" class="form-label">Name:</label>
               <div class="input-group mb-4">
-                <span class="input-group-text">
-                  <i class="bi bi-chat-right-dots-fill"></i>
+                <span class="input-group-text"
+                  ><i class="bi bi-person-fill"></i>
                 </span>
                 <input
                   type="text"
@@ -612,22 +613,19 @@
                 />
               </div>
 
-              <input
-                type="text"
-                class="form-control"
-                id="name"
-                placeholder="e.g. Mario Lopez"
-              />
-
               <label for="subject" class="form-label"
-                >This is a dropdown menu created using the
-                &lt;select&gt;&lt;/select&gt; element.</label
+                >This is a dropdown menu</label
               >
-              <select class="form-select" id="subject">
-                <option value="pricing" selected>Pricing Query</option>
-                <option value="content">Content Query</option>
-                <option value="other">Other Query</option>
-              </select>
+              <div class="input-group mb-4">
+                <span class="input-group-text">
+                  <i class="bi bi-chat-right-dots-fill"></i>
+                </span>
+                <select class="form-select" id="subject">
+                  <option value="pricing" selected>Pricing Query</option>
+                  <option value="content">Content Query</option>
+                  <option value="other">Other Query</option>
+                </select>
+              </div>
 
               <div class="form-floating mb-4 mt-5">
                 <textarea
