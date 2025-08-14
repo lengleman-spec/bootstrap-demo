@@ -587,12 +587,17 @@
           <div class="col-lg-6">
             <form>
               <label for="email" class="form-label">Email address:</label>
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                placeholder="e.g. mario@hotmail.com"
-              />
+              <div class="mb-4 input-group">
+                <span class="input-group-text">
+                  <i class="bi bi-person-fill"></i>
+                </span>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="e.g. mario@hotmail.com"
+                />
+              </div>
 
               <label for="name" class="form-label">Name:</label>
               <input
@@ -619,6 +624,10 @@
                   style="height: 140px"
                 ></textarea>
                 <label for="notes">Textarea Element</label>
+              </div>
+
+              <div class="mb-4 text-center">
+                <button type="submit" class="btn btn-secondary">Submit</button>
               </div>
             </form>
           </div>
