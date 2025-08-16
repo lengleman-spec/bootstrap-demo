@@ -7,14 +7,12 @@
 
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    />
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
 
     <!-- Bootstrap Icons CDN -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
-    />
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
   </head>
   <body>
     <!-- Navbars -->
@@ -32,15 +30,13 @@
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#main-nav"
-        >
+          data-bs-target="#main-nav">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div
           class="collapse navbar-collapse justify-content-end align-center"
-          id="main-nav"
-        >
+          id="main-nav">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a href="#containers" class="nav-link">Containers</a>
@@ -231,8 +227,7 @@
         <h2>Aligning Items</h2>
         <div
           style="height: 200px; border: 2px solid black"
-          class="row align-items-end"
-        >
+          class="row align-items-end">
           <div class="col-md-3">
             <div class="p-5 bg-primary text-light">col 1</div>
           </div>
@@ -383,8 +378,7 @@
                   data-bs-toggle="collapse"
                   data-bs-target="#accordion-1"
                   aria-expanded="true"
-                  aria-controls="accordion-1"
-                >
+                  aria-controls="accordion-1">
                   First Accordion
                 </button>
               </h2>
@@ -392,8 +386,7 @@
                 id="accordion-1"
                 class="accordion-collapse collapse show"
                 aria-labelledby="accordion-1"
-                data-bs-parent="#accordion"
-              >
+                data-bs-parent="#accordion">
                 <!-- .show above means that the accordion item's information will be automatically shown (open) when the page loads. Excluding it will make it so the tab must be clicked to first open. -->
                 <div class="accordion-body">
                   <p>
@@ -420,8 +413,7 @@
                   data-bs-toggle="collapse"
                   data-bs-target="#accordion-2"
                   aria-expanded="true"
-                  aria-controls="accordion-2"
-                >
+                  aria-controls="accordion-2">
                   Second Accordion
                 </button>
               </h2>
@@ -429,8 +421,7 @@
                 id="accordion-2"
                 class="accordion-collapse collapse"
                 aria-labelledby="accordion-2"
-                data-bs-parent="#accordion"
-              >
+                data-bs-parent="#accordion">
                 <div class="accordion-body">
                   <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -456,8 +447,7 @@
                   data-bs-toggle="collapse"
                   data-bs-target="#accordion-3"
                   aria-expanded="true"
-                  aria-controls="accordion-3"
-                >
+                  aria-controls="accordion-3">
                   Third Accordion
                 </button>
               </h2>
@@ -465,8 +455,7 @@
                 id="accordion-3"
                 class="accordion-collapse collapse"
                 aria-labelledby="accordion-3"
-                data-bs-parent="#accordion"
-              >
+                data-bs-parent="#accordion">
                 <div class="accordion-body">
                   <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -597,16 +586,14 @@
                   type="email"
                   class="form-control"
                   id="email"
-                  placeholder="e.g. mario@hotmail.com"
-                />
+                  placeholder="e.g. mario@hotmail.com" />
 
                 <!-- Tooltip -->
                 <span class="input-group-text">
                   <span
                     class="tt"
                     data-bs-placement="bottom"
-                    title="Enter an email address we can reply to."
-                  >
+                    title="Enter an email address we can reply to.">
                     <i class="bi bi-question-circle text-muted"></i>
                   </span>
                 </span>
@@ -625,8 +612,7 @@
                   type="text"
                   class="form-control"
                   id="name"
-                  placeholder="e.g. Mario Lopez"
-                />
+                  placeholder="e.g. Mario Lopez" />
               </div>
 
               <label for="subject" class="form-label"
@@ -647,8 +633,7 @@
                 <textarea
                   id="notes"
                   class="form-control"
-                  style="height: 140px"
-                ></textarea>
+                  style="height: 140px"></textarea>
                 <label for="notes">Textarea Element</label>
               </div>
 
@@ -665,7 +650,7 @@
     <section class="bg-light">
       <div class="container">
         <div class="text-center">
-          <h2>Warning</h2>
+          <h2>Modals</h2>
           <p class="lead">
             Next, let's talk about Modals. Modals are a Bootstrap component that
             manifests as a pop-up dialog box that appears over the main webpage
@@ -683,6 +668,13 @@
               <strong>Esc</strong> key.
             </p>
 
+            <p class="text-muted my-4">
+              When the button "Register for Updates" below is clicked, it will
+              trigger the modal to pop-up. This is because we have the
+              <code>data-bs-toggle</code> and
+              <code>dad-bs-target</code> attributes assigned to that button.
+            </p>
+
             <h5 class="mb-4 text-dark">
               There are no nested modals - Bootstrap only supports one modal at
               a time.
@@ -690,15 +682,59 @@
             <button
               class="btn btn-outline-primary"
               data-bs-toggle="modal"
-              data-bs-target="#reg-modal"
-            >
+              data-bs-target="#reg-modal">
               Register for Updates
             </button>
           </div>
         </div>
       </div>
     </section>
+
     <!-- Modal -->
+
+    <div
+      class="modal fade"
+      id="reg-modal"
+      tabindex="-1"
+      aria-labelledby="modal-title"
+      aria-hidden="true">
+      <!-- aria-hidden=true means that by default, it is not shown when we first come on the page -->
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-title">This is a modal.</h5>
+
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="close"></button>
+          </div>
+
+          <div class="modal-body">
+            <p>
+              This is the modal-body class. It is the where the main content
+              area of the pop-up resides. It goes between the modal-header and
+              modal-footer. The modal-body class automatically adds padding for
+              proper spacing.
+            </p>
+
+            <label for="modal-email" class="form-label"
+              >To learn more, enter your email address:</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="modal-email"
+              placeholder="e.g. mariolopez@example.com" />
+          </div>
+
+          <div class="modal-footer">
+            <button class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
